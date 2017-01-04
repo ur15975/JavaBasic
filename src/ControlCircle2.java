@@ -34,11 +34,20 @@ public class ControlCircle2 extends JFrame{
             canvas.enlarge();
         }
     }
+    class ShrinkListener implements ActionListener{
+        public void actionPerformed(ActionEvent e){
+            canvas.shrink();
+        }
+    }
 
     class CirclePanel extends JPanel{
         private int radius = 5;
         public void enlarge(){
             radius ++;
+            repaint();
+        }
+        public void shrink(){
+            radius --;
             repaint();
         }
         protected void paintComponent(Graphics g){

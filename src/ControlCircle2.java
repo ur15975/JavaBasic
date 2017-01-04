@@ -19,6 +19,7 @@ public class ControlCircle2 extends JFrame{
         this.add(canvas,BorderLayout.CENTER);
         this.add(panel,BorderLayout.SOUTH);
         jbtEnlarge.addActionListener(new EnlargeListener());
+        jbtShrink.addActionListener(new ShrinkListener());
     }
 
     public static void main(String[] args) {
